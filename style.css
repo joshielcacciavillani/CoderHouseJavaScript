@@ -1,0 +1,9 @@
+body {
+  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu;
+}
+
+.hr3 {
+  border: o;
+  height: 2px;
+  background-image: linear-gradient(to right, transparent, rgb(169, 162, 162), transparent);
+}
