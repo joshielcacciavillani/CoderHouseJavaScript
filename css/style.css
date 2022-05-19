@@ -1,0 +1,121 @@
+/* General */
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: #fff;
+  font-size: 0.8rem;
+  line-height: 1.5;
+  color: rgb(56, 56, 56);
+}
+
+label {
+  font-size: 1rem;
+}
+
+p {
+  margin-bottom: 30px;
+}
+
+a {
+  color: #5c51e0;
+  outline: none;
+  text-decoration: none;
+  -moz-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  -ms-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+a:hover,
+a:focus {
+  color: rgb(140, 134, 212);
+  text-decoration: none;
+  outline: none;
+}
+
+/* Utilities */
+.navbar {
+  text-align: center;
+}
+
+.row-height {
+  min-height: 100vh;
+  height: 100vh;
+}
+
+.content-right {
+  overflow-y: auto;
+}
+
+.copyright-text {
+  text-align: center;
+}
+
+.modal-content .close {
+  font-weight: 300;
+  font-size: 32px;
+  font-size: 2rem;
+  outline: none;
+}
+
+/* Forms */
+
+.form-control {
+  border: 1px solid #dedede;
+  font-size: 0.9rem;
+  height: calc(2.46rem + 2px);
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  border-radius: 4px;
+}
+
+.form-control:focus {
+  box-shadow: none;
+  border-color: #434bdf;
+}
+
+.form-container .form-control:focus {
+  box-shadow: none;
+  border-color: #5044ca;
+}
+
+.form-container .form-group {
+  margin-bottom: 30px;
+}
+
+#message {
+  height: 150px;
+}
+
+.form-label {
+  font-weight: 600;
+}
+
+/* Buttons */
+
+.btn-primary {
+  border: none;
+  color: #fff;
+  background-color: #5c51e0;
+  outline: none;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+  background-color: #5044ca;
+  outline: none;
+}
+
+.btn-secondary {
+  margin: 2px;
+  outline: none;
+  color: rgb(0, 0, 0);
+  background-color: crimson;
+}
