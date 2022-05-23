@@ -92,15 +92,16 @@ function getCryptos() {
   listaCryptos.innerHTML = "";
   totalCryptos.innerHTML = "";
 
-  for (let i = 0; i < cryptos.length; i++) {
-    let symbol = cryptos[i].symbol;
-    let quantity = cryptos[i].quantity;
-    let price = cryptos[i].price;
-    let totalPrice = cryptos[i].price * cryptos[i].quantity;
-    portfolioPrice = portfolioPrice + totalPrice;
+  if (cryptos != null) {
+    for (let i = 0; i < cryptos.length; i++) {
+      let symbol = cryptos[i].symbol;
+      let quantity = cryptos[i].quantity;
+      let price = cryptos[i].price;
+      let totalPrice = cryptos[i].price * cryptos[i].quantity;
+      portfolioPrice = portfolioPrice + totalPrice;
 
-    let row = document.createElement("tr");
-    row.innerHTML = `<th scope="row" style="width: 5%">${i}</th>
+      let row = document.createElement("tr");
+      row.innerHTML = `<th scope="row" style="width: 5%">${i}</th>
                         <td style="width: 15%">${symbol}</td>
                         <td style="width: 15%">$${price}</td>  
                         <td style="width: 15%">${quantity}</td>
@@ -108,7 +109,8 @@ function getCryptos() {
                         <td style="width: 5%"><a class="btn btn-outline-danger btn-secondary btn-sm " onclick="deleteCrypto('${symbol}')"><i class="bi-trash"></i>
 </a></td>
                         `;
-    listaCryptos.append(row);
+      listaCryptos.append(row);
+    }
   }
 
   let rowTotal = document.createElement("tr");
